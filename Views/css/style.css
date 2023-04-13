@@ -1,0 +1,113 @@
+/* Global Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary: #E24A4A;
+    --primary_hover: #A70000;
+    --background: #e4e4e8;
+    --background2: #FFFFFF;
+    /* --input-background: #ededed; */
+    --dark: #1E1E1E;
+    --dark2: #5D737E;
+    --blue: #08B2E3;
+    --green: #94E8B4;
+}
+
+::placeholder {
+    color: var(--background2);
+    font-weight: 200;
+}
+
+body {
+    color: var(--dark);
+    background: var(--background);
+}
+
+
+
+.btn {
+    padding: 10px;
+    background: var(--primary);
+    color: var(--background2);
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.26));
+    transition: .3s;
+}
+
+.btn:hover {
+    background: var(--primary_hover);
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background: var(--primary);
+}
+
+.content-section {
+    background: var(--background2);
+    width: 100%;
+    padding: 25px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.09));
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 12.5px;
+}
+
+/* First Form */
+.first_form {
+    max-width: 1400px;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.first_form .btn {
+    width: 360px;
+    margin-top: 10px;
+}
+
+.first_form .content-section {
+    margin: 12.5px
+}
+
+.first_form .form-title {
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--primary);
+}
+
+.first_form .input-list {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.first_form .input-list input {
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none;
+    background: var(--dark2);
+    color: var(--green);
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.26));
+    margin: 0 10px;
+    font-size: 16px;
+}
