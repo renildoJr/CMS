@@ -11,7 +11,6 @@
     --primary_hover: #A70000;
     --background: #e4e4e8;
     --background2: #FFFFFF;
-    /* --input-background: #ededed; */
     --dark: #1E1E1E;
     --dark2: #5D737E;
     --blue: #08B2E3;
@@ -27,8 +26,6 @@ body {
     color: var(--dark);
     background: var(--background);
 }
-
-
 
 .btn {
     padding: 10px;
@@ -67,8 +64,8 @@ hr {
     margin-bottom: 12.5px;
 }
 
-/* First Form */
-.first_form {
+/* CMS Form */
+.cms_form {
     max-width: 1400px;
     margin: 70px auto;
     display: flex;
@@ -78,22 +75,22 @@ hr {
     padding: 50px;
 }
 
-.first_form .btn {
+.cms_form .btn {
     width: 360px;
     margin-top: 10px;
 }
 
-.first_form .content-section {
+.cms_form .content-section {
     margin: 12.5px
 }
 
-.first_form .form-title {
+.cms_form .form-title {
     font-size: 42px;
     font-weight: 900;
     color: var(--primary);
 }
 
-.first_form .input-list {
+.cms_form .input-list {
     margin-top: 25px;
     display: flex;
     justify-content: center;
@@ -101,7 +98,7 @@ hr {
     gap: 20px;
 }
 
-.first_form .input-list input {
+.cms_form .input-list input {
     padding: 6px 12px;
     border-radius: 5px;
     border: none;
