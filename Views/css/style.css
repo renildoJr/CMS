@@ -1,8 +1,47 @@
+/* TESTS */
+
+/* Scroll Area  */
+.box::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #000000; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary); 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+
+.box {
+    border: 2px solid red;
+    width: 200px;
+    max-height: 100px;
+    padding: 10px;
+    overflow-y: scroll;
+    scroll-behavior: smooth
+}
+
+/* // TESTS */
+
+
+
 /* Global Settings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
@@ -65,7 +104,7 @@ hr {
 }
 
 /* CMS Form */
-.cms_form {
+.form {
     max-width: 1400px;
     margin: 70px auto;
     display: flex;
@@ -75,22 +114,22 @@ hr {
     padding: 50px;
 }
 
-.cms_form .btn {
+form .btn {
     width: 360px;
     margin-top: 10px;
 }
 
-.cms_form .content-section {
+form .content-section {
     margin: 12.5px
 }
 
-.cms_form .form-title {
+form .form-title {
     font-size: 42px;
     font-weight: 900;
     color: var(--primary);
 }
 
-.cms_form .input-list {
+form .input-list {
     margin-top: 25px;
     display: flex;
     justify-content: center;
@@ -98,7 +137,7 @@ hr {
     gap: 20px;
 }
 
-.cms_form .input-list input {
+form .input-list input {
     padding: 6px 12px;
     border-radius: 5px;
     border: none;
