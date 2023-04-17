@@ -1,10 +1,11 @@
 function include(template_part) {
     switch(template_part) {
         case 'header':
-            document.write(`<header>
+            document.write(`
+            <header>
                 <nav class="header-navbar">
                     <ul class="nav-menu">
-                        <li><a href="home.html"><img src="../images/logo.png" alt="Logo do sistema"></a></li>
+                        <li><a href="home.html"><img class="logo" src="../images/logo.png" alt="Logo do sistema"></a></li>
                         <li><a href="#"><i class="fa-solid fa-house"></i>Meu Site</a></li>
                         <li><a class="msg_icon" href=""><i class="fa-solid fa-envelope"></i>0</a></li>
                         <li><a href="#"><i class="fa-solid fa-plus"></i>Novo</a></li>
@@ -23,7 +24,8 @@ function include(template_part) {
         break;
         
         case 'sidebar':
-            document.write(`<aside class="side-bar">
+            document.write(`
+            <aside class="side-bar">
                 <ul class="menu">
                     <li><a href="#"><i class="fa-solid fa-clock"></i></a>Dashboard</li>
                     <li><a href="#"><i class="fa-solid fa-pencil"></i></a>Posts
@@ -43,7 +45,8 @@ function include(template_part) {
         break;
 
         case 'footer':
-            document.write(`<footer>
+            document.write(`
+            <footer>
                 <!-- Font Awesome Link -->
                 <script src="https://kit.fontawesome.com/5034295430.js" crossorigin="anonymous"></script>
                 <script>
