@@ -56,6 +56,8 @@ body {
     cursor: pointer;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.26));
     transition: .3s;
+    display: block;
+    width: fit-content;
 }
 
 .btn.btn_primary {
@@ -80,8 +82,8 @@ hr {
 }
 
 .section-title {
-    font-size: 32px;
-    font-weight: 800;
+    font-size: 28px;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 12.5px;
 }
@@ -172,13 +174,49 @@ main {
     display: flex;
 }
 
+main section {
+    background: var(--theme_section_background);
+    padding: 2rem;
+    box-shadow: 0 0 2px 2px #0000000f;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main section .box * {
+    margin: 5px 0;
+}
+
+main .page-content {
+    padding: 3rem;
+    width: 100%;
+}
+
+main .page-content .page-title {
+    font-size: 36px;
+    font-weight: 800;
+    border-bottom: 5px solid var(--theme_primary);
+    display: inline-flex;
+    min-width: 300px;
+    margin-bottom: 2rem;
+}
+
+main section h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
 /* Sidebar */
 .sidebar {
     padding-top: 25px;
     background: var(--theme_dark);
     width: 250px;
     min-height: calc(100vh - 60px);
-    box-shadow: 0 0 2px 2px #00000043;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.08);
 }
 
 .sidebar .menu li.active, 
