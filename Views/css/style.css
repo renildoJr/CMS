@@ -8,6 +8,11 @@
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+.grid-c2 {
+    display: grid;
+    grid-template-columns: 2fr .7fr;
+}
+
 :root {
     /* Theme */
     --theme_primary: #E24A4A;
@@ -57,7 +62,6 @@ body {
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.26));
     transition: .3s;
     display: block;
-    width: fit-content;
 }
 
 .btn.btn_primary {
@@ -195,6 +199,39 @@ main .page-content {
     width: 100%;
 }
 
+main .page-content .left {
+    margin-right: 5rem;
+    min-width: 460px;
+    height: 600px;
+}
+
+main .page-content .left label {
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: 800;
+}
+
+main .page-content .left input,
+main .page-content .left textarea {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    background: var(--theme_input_background);
+    box-shadow: 0 0 2px 2px #00000022;
+    margin-top: 1rem;
+}
+
+main .page-content .left textarea {
+    height: 100%;
+    resize: none;
+}
+
+main .page-content .left .word-counter {
+    margin-top: 1rem;
+}
+
 main .page-content .page-title {
     font-size: 36px;
     font-weight: 800;
@@ -266,7 +303,7 @@ main section h3 {
 }
 
 form .btn {
-    width: 360px;
+    max-width: 360px;
     margin-top: 10px;
 }
 
@@ -312,3 +349,45 @@ form.container .btn {
     margin: 25px auto;
     display: block;
 }
+
+.page-sidebar {
+    width: 360px;
+}
+
+.page-sidebar section  {
+  display: block;
+}
+
+.page-sidebar input[type=text]  {
+   width: 100%;
+   padding: .5rem;
+   border: none;
+   background: var(--theme_input_background);
+   box-shadow: 0 0 2px 2px #00000019;
+}
+
+.page-sidebar .input-item  {
+   display: block;
+   text-align: left;
+}
+
+.page-sidebar .input-item input {
+  accent-color:  var(--theme_primary);
+}
+
+.page-sidebar .box  {
+    background: var(--theme_input_background);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    height: 120px;
+    overflow-y: scroll;
+    border: 1px solid var(--theme_primary);
+    border-radius: 10px;
+ }
+
+.page-sidebar .catg-btn  {
+    font-weight: 700;
+    text-decoration: underline;
+    color: var(--theme_primary);
+ }
+

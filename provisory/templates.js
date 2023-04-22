@@ -54,6 +54,7 @@ function include(template_part) {
                 
                     if(navMsgIcon.textContent > 0){
                         MsgIcon.classList.add("fa-beat");
+                        MsgIcon.style.color="var(--theme_primary)";
                     }
                 </script>
             </footer>`);
