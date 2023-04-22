@@ -9,9 +9,9 @@
     <title>CMS | Dashboard</title>
 </head>
 <body>
-    <script>include('header')</script>
+    <?php include "../includes/header.php" ?>
     <main>
-        <script>include('sidebar')</script>
+        <?php include "../includes/sidebar.php" ?>
         <div class="page-content">
             <h1 class="page-title">Dashboard</h1>
             <section>
@@ -33,6 +33,6 @@
             </section>
         </div>
     </main>
-    <script>include('footer')</script>
+    <?php include "../includes/footer.php" ?>
 </body>
 </html>
